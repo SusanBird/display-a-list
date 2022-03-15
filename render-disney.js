@@ -1,4 +1,4 @@
-import { disneyArr } from './disney-data.js';
+//import { disneyArr } from './disney-data.js';
 
 export function renderDisney(disneyObject) {
     

@@ -11,7 +11,19 @@ const candyEl = document.querySelector('.candies-list');
   // use user input to update state 
   // update DOM to reflect the new state
 for (let candy of candyArr) {
-    const fruitEl = renderCandy(candy);
-    //console.log(fruitEl);
-    candyEl.append(fruitEl);
+    const candyEl = renderCandy(candy);
+
+    candyEl.append(candyEl);
+}
+
+
+import { disneyArr } from './disney-data.js';
+import { renderDisney } from './render-disney';
+
+const disneyListEl = document.querySelector('.disney-list');
+
+for (let disney of disneyArr) {
+    const disneyEl = renderDisney(disney);
+
+    disneyListEl.append(disneyEl);
 }
