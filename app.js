@@ -3,7 +3,7 @@ import { candyArr } from './candies-data.js';
 import { renderCandy } from './render-candy.js';
 
 // initialize global state
-const candyEl = document.querySelector('.candies-list');
+const candyListEl = document.querySelector('.candies-list');
 
 
 // set event listeners 
@@ -13,12 +13,12 @@ const candyEl = document.querySelector('.candies-list');
 for (let candy of candyArr) {
     const candyEl = renderCandy(candy);
 
-    candyEl.append(candyEl);
+    candyListEl.append(candyEl);
 }
 
 
 import { disneyArr } from './disney-data.js';
-import { renderDisney } from './render-disney';
+import { renderDisney } from './render-disney.js';
 
 const disneyListEl = document.querySelector('.disney-list');
 
@@ -26,4 +26,16 @@ for (let disney of disneyArr) {
     const disneyEl = renderDisney(disney);
 
     disneyListEl.append(disneyEl);
+}
+
+
+import { bobsledArr } from './bobsled-data.js';
+import { renderBobsledEl } from './render-bobsled.js';
+
+const bobsledListEl = document.querySelector('.bobsled-list');
+
+for (let bobsled of bobsledArr) {
+    const bobsledEl = renderBobsledEl(bobsled);
+
+    bobsledListEl.append(bobsledEl);
 }
