@@ -1,4 +1,4 @@
-export const candies = [
+export const candyArr = [
     {
         name: 'Snickers',
         color: 'brown',
@@ -15,7 +15,7 @@ export const candies = [
         description: 'two cookie bars with carmel and chocolate'
     },
     {
-        name: 'Starbursts',
+        name: 'Starburst',
         color: 'rainbow',
         description: 'chewy fruit-flavored candies'
     },

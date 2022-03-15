@@ -1,4 +1,4 @@
-import { candies } from "./candies-data";
+import { candyArr } from './candies-data.js';
 
 export function renderCandy(candyObject) {
     // <div class="candy" style="background: pink">
