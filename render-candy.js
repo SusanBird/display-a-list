@@ -1,3 +1,5 @@
+import { candies } from "./candies-data";
+
 export function renderCandy(candyObject) {
     // <div class="candy" style="background: pink">
     // <h3>Snickers</h3>
@@ -12,6 +14,13 @@ export function renderCandy(candyObject) {
     const descriptionEl = document.createElement('p');
 
     candyEl.classList.add('candy');
+
+    nameEl.textContent = candyObject.name;
+    imgEl.src = `assets/${candyObject.name}.png`;
+    colorEl.textContent = `color: ${candyObject.colorEl}`;
+    descriptionEl.textContent = candyObject.description;
+
+    candyEl.append(nameEl, imgEl, colorEl, descriptionEl);
 
     return candyEl;
 }
