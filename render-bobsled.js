@@ -8,7 +8,7 @@ export function renderBobsledEl(bobsledObject) {
 
     medalEl.textContent = bobsledObject.medal;    
     finalTimeEl.textContent = `Final time was ${bobsledObject.finalTime}`;
-    teamMemberListEl.textContent = `By ${bobsledObject.teamMembers.name}, born ${bobsledObject.teamMembers.birth}`;
+    teamMemberListEl.textContent = `Team members: `;
 
     for (let teamMember of bobsledObject.teamMembers) {
         // make and append an li
