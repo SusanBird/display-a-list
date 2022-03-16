@@ -17,7 +17,7 @@ export function renderCandy(candyObject) {
 
     nameEl.textContent = candyObject.name;
     imgEl.src = `assets/${candyObject.name}.png`;
-    colorEl.textContent = `color: ${candyObject.colorEl}`;
+    colorEl.textContent = `Color: ${candyObject.color}`;
     descriptionEl.textContent = candyObject.description;
 
     candyEl.append(nameEl, imgEl, colorEl, descriptionEl);
