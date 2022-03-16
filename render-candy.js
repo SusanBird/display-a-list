@@ -1,5 +1,3 @@
-import { candyArr } from './candies-data.js';
-
 export function renderCandy(candyObject) {
     // <div class="candy" style="background: pink">
     // <h3>Snickers</h3>
