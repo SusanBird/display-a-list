@@ -8,10 +8,10 @@ export function renderCityEl(cityObject) {
     cityEl.classList.add('city');
 
     nameEl.textContent = cityObject.name;    
-    stateEl.textContent = `state in ${cityObject.year}`;
-    populationEl.textContent = `By ${cityObject.size.name}, born ${cityObject.size.birth}`;
+    stateEl.textContent = `State: ${cityObject.state}`;
+    populationEl.textContent = `Population: ${cityObject.population.size} people, with a racial composition of: `;
 
-    for (let race of cityObject.races) {
+    for (let race of cityObject.population.race) {
         // make and append an li
         const raceEl = document.createElement('li');
         raceEl.textContent = race;

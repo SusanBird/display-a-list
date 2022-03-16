@@ -39,3 +39,14 @@ for (let bobsled of bobsledArr) {
 
     bobsledListEl.append(bobsledEl);
 }
+
+import { citiesArr } from './city-data.js';
+import { renderCityEl } from './render-city.js';
+
+const cityListEl = document.querySelector('.cities-list');
+
+for (let city of citiesArr) {
+    const cityEl = renderCityEl(city);
+
+    cityListEl.append(cityEl);
+}
