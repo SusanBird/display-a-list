@@ -1,4 +1,4 @@
-export const cities = [
+export const citiesArr = [
     {
         name: 'Portland',
         state: 'Oregon',
